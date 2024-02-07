@@ -2,13 +2,17 @@
   <img 
   alt="Python-barcode" 
   title="Python-barcode Logo" 
-  src="./assets/logo.svg" 
-  width="300px" />
+  src=".github/logo.svg" 
+  width="300px"/>
 </h1>
  
 <h4 align="center">A Python project using Flask for generating barcodes. This project belongs to Rocketseat's event called NLW-Experts.</h4> 
 
-<center> ![Progress](https://progress-bar.dev/33/?title=done)
+<center>
+
+![Progress](https://progress-bar.dev/33/?title=done) 
+
+</center>
 
 ## ⚙️Techs:
 - [Virtualenv](https://pypi.org/project/virtualenv/)
