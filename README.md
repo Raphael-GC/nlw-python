@@ -63,15 +63,17 @@ When we want to keep a record of installed dependencies and their versions, we u
 <details>
 
 <summary>⏰Day-2</summary>
+- Implementing App in Src <br>
 
 **__init__.py**:
 ```
 This file is responsible for allow imports inside the folders. All folders that needs imports in their functions must have one of this file. Even if the folders were in cascating, each folder must have a file __init__.py .
 ```
-
+**Code refactoring**
 ```
-As responsabilidades principais da aplicação foram melhor distribuidas, ou melhor organizadas. Por exemplo, a pasta main concentrou a responsabilidade pelo framework, de modo que qualquer alteração que queira realizar no framework é lá, e apenas lá que terei que fazer alterções.
+As responsabilidades principais da aplicação foram melhor distribuidas, ou melhor organizadas. Por exemplo, a pasta main concentrou a responsabilidade pelo framework, de modo que qualquer alteração que se queira realizar no framework é lá, e apenas lá, que terei que fazer alterções. Além disso, essas mudanças visam tornar a aplicação mais escalável.
 ```
+**Blueprints**
 ```
 As Blueprints facilitam na rápida identificação do papel de cada rota da aplicação, contruibuindo também para a melhor organização e legebilidade do código. É uma bibioteca muito útil dentro do framework Flask.
 ```
