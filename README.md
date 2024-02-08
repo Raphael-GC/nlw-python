@@ -30,7 +30,7 @@
 ## 📋Notes:
 <details>
 
-<summary>⏰Day-1</summary>
+<summary><b>⏰Day-1</b></summary>
 - Adding Pylint to project <br>
 - Adding pre-commit to project <br>
 - Adding server base params, including route and feature for generating barcode <br>
@@ -62,37 +62,41 @@ When we want to keep a record of installed dependencies and their versions, we u
 
 <details>
 
-<summary>⏰Day-2</summary>
+<summary><b>⏰Day-2</b></summary>
 - Implementing App in Src <br>
-- Adding class HttpRequest to Http_types
-- Implementing View for tag creator with Http Types
-- Adding class BarcodeHandler to Drivers
+- Adding class HttpRequest to Http_types <br>
+- Implementing View for tag creator with Http Types <br>
+- Adding class BarcodeHandler to Drivers <br>
 
-**__init__.py**:
-```
-This file is responsible for allowing imports inside the folders. All folders that need imports in their functions must have one of these files. Even if the folders were cascading, each folder must have a file __init__.py.
-```
-**Code refactoring**
-```
-The application's main responsibilities have been better organized and distributed. For instance, the framework's primary folder is now solely responsible for any changes to the framework, making it easier to manage and maintain. Additionally, all components related to the HTTP protocol and business rules logic have been consolidated in specific locations. These changes have been implemented to enhance the application's scalability.
-```
-**Blueprints**
-```
-Blueprints simplify the identification of each application route's role and contribute to better code organization and readability, making it a valuable library in the Flask framework.
-```
-**Controllers folder**
-```
-Our business rules are located in this place.
-```
+---
 
-**Drivers folder e Barcode_handler.py**
-```
-'Drivers' is the place where we concentrate all external libraries. In our code, 'Barcode_handler.py' acts as a central point for accessing the external libraries. This means that if any other file needs to access an external library, it can only do so through barcode_handler.py. This is a principle of good practice.
-```
+**__init__.py**: <br>
+
+This file is responsible for allowing imports inside the folders. All folders that need imports in their functions must have one of these files. Even if the folders were cascading, each folder must have a file __init__.py. <br>
+
+----
+**Code refactoring** <br>
+
+The application's main responsibilities have been better organized and distributed. For instance, the framework's primary folder is now solely responsible for any changes to the framework, making it easier to manage and maintain. Additionally, all components related to the HTTP protocol and business rules logic have been consolidated in specific locations. These changes have been implemented to enhance the application's scalability. <br>
+
+----
+**Blueprints** <br>
+
+Blueprints simplify the identification of each application route's role and contribute to better code organization and readability, making it a valuable library in the Flask framework. <br>
+
+----
+**Controllers folder** <br>
+
+Our business rules are located in this place. <br>
+
+----
+**Drivers folder e Barcode_handler.py** <br>
+
+'Drivers' is the place where we concentrate all external libraries. In our code, 'Barcode_handler.py' acts as a central point for accessing the external libraries. This means that if any other file needs to access an external library, it can only do so through barcode_handler.py. This is a principle of good practice. <br>
 </details>
 
 <details>
 
-<summary>⏰Day-3</summary>
+<summary><b>⏰Day-3</b></summary>
 
 </details>
