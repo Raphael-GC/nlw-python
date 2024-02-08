@@ -64,6 +64,8 @@ When we want to keep a record of installed dependencies and their versions, we u
 
 <summary>⏰Day-2</summary>
 - Implementing App in Src <br>
+- config: Adding class HttpRequest to Http_types
+- feat: Implementing View for tag creator with Http Types
 
 **__init__.py**:
 ```
@@ -77,7 +79,10 @@ As responsabilidades principais da aplicação foram melhor distribuidas, ou mel
 ```
 As Blueprints facilitam na rápida identificação do papel de cada rota da aplicação, contruibuindo também para a melhor organização e legebilidade do código. É uma bibioteca muito útil dentro do framework Flask.
 ```
-
+**Controller folder**
+```
+É o lugar onde se localiza nossa regra de negócio.
+```
 </details>
 
 <details>
