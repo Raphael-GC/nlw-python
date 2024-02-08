@@ -64,24 +64,30 @@ When we want to keep a record of installed dependencies and their versions, we u
 
 <summary>⏰Day-2</summary>
 - Implementing App in Src <br>
-- config: Adding class HttpRequest to Http_types
-- feat: Implementing View for tag creator with Http Types
+- Adding class HttpRequest to Http_types
+- Implementing View for tag creator with Http Types
+- Adding class BarcodeHandler to Drivers
 
 **__init__.py**:
 ```
-This file is responsible for allow imports inside the folders. All folders that needs imports in their functions must have one of this file. Even if the folders were in cascating, each folder must have a file __init__.py .
+This file is responsible for allowing imports inside the folders. All folders that need imports in their functions must have one of these files. Even if the folders were cascading, each folder must have a file __init__.py.
 ```
 **Code refactoring**
 ```
-As responsabilidades principais da aplicação foram melhor distribuidas, ou melhor organizadas. Por exemplo, a pasta main concentrou a responsabilidade pelo framework, de modo que qualquer alteração que se queira realizar no framework é lá, e apenas lá, que terei que fazer alterções. Além disso, essas mudanças visam tornar a aplicação mais escalável.
+The application's main responsibilities have been better organized and distributed. For instance, the framework's primary folder is now solely responsible for any changes to the framework, making it easier to manage and maintain. Additionally, all components related to the HTTP protocol and business rules logic have been consolidated in specific locations. These changes have been implemented to enhance the application's scalability.
 ```
 **Blueprints**
 ```
-As Blueprints facilitam na rápida identificação do papel de cada rota da aplicação, contruibuindo também para a melhor organização e legebilidade do código. É uma bibioteca muito útil dentro do framework Flask.
+Blueprints simplify the identification of each application route's role and contribute to better code organization and readability, making it a valuable library in the Flask framework.
 ```
-**Controller folder**
+**Controllers folder**
 ```
-É o lugar onde se localiza nossa regra de negócio.
+Our business rules are located in this place.
+```
+
+**Drivers folder e Barcode_handler.py**
+```
+'Drivers' is the place where we concentrate all external libraries. In our code, 'Barcode_handler.py' acts as a central point for accessing the external libraries. This means that if any other file needs to access an external library, it can only do so through barcode_handler.py. This is a principle of good practice.
 ```
 </details>
 
