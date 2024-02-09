@@ -21,6 +21,7 @@
 - [Flask](https://pypi.org/project/Flask/)
 - [Python-barcode](https://pypi.org/project/python-barcode/)
 - [Pillow](https://pypi.org/project/pillow/)
+- [Cerberus](https://docs.python-cerberus.org/)
 
 ## 🔗Useful links:
 - [Notion](https://efficient-sloth-d85.notion.site/NLW-14-Expert-9e11ff472de64b08a5f9e277a20c3ecc)
@@ -98,6 +99,12 @@ Our business rules are located in this place. <br>
 <details>
 
 <summary><b>⏰Day-3</b></summary>
-- feat: Implementado o tratamento de erros
+- Implementing Error Handler
+- Implementing Validator
+
+----
+**Cerberus e Validator_raw.py** <br>
+
+Para não criarmos cada validação de entrada manualmente, podemos utilizar o 'Validator' da biblioteca do Cerberus. <br>
 
 </details>
