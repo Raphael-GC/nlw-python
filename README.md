@@ -10,7 +10,7 @@
 
 <center>
 
-![Progress](https://progress-bar.dev/33/?title=done) 
+![Progress](https://progress-bar.dev/66/?title=done) 
 
 </center>
 
@@ -98,5 +98,6 @@ Our business rules are located in this place. <br>
 <details>
 
 <summary><b>⏰Day-3</b></summary>
+- feat: Implementado o tratamento de erros
 
 </details>
