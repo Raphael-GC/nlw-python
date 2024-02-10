@@ -22,6 +22,7 @@
 - [Python-barcode](https://pypi.org/project/python-barcode/)
 - [Pillow](https://pypi.org/project/pillow/)
 - [Cerberus](https://docs.python-cerberus.org/)
+- [Pytest](https://docs.pytest.org/en/8.0.x/getting-started.html)
 
 ## 🔗Useful links:
 - [Notion](https://efficient-sloth-d85.notion.site/NLW-14-Expert-9e11ff472de64b08a5f9e277a20c3ecc)
@@ -101,10 +102,29 @@ Our business rules are located in this place. <br>
 <summary><b>⏰Day-3</b></summary>
 - Implementing Error Handler
 - Implementing Validator
+- Implementing Unit Test
 
 ----
 **Cerberus e Validator_raw.py** <br>
 
 Para não criarmos cada validação de entrada manualmente, podemos utilizar o 'Validator' da biblioteca do Cerberus. <br>
+
+----
+**Mock_value** <br>
+
+Para evitar a criação desnecessária de barcodes a cada teste, foi instanciada uma cópia fantasma ou espelho, que atenderá as demandas do teste unitário sem necessariamente criar algo, retornando o valor desejado através do 'mock_value', no trecho de código abaixo. <br>
+```py
+from  unittest.mock import patch
+from src.drivers.barcode_handler import BarcodeHandler
+from .tag_creator_controller import TagCreatorController
+
+@patch.object(BarcodeHandler, 'create_barcode')
+def test_create(mock_create_barcode):
+    mock_value = "image_path"
+    mock_create_barcode.value = mock_value
+    tag_creator_controller = TagCreatorController()
+
+    result = tag_creator_controller.create(mock_value)
+```
 
 </details>
