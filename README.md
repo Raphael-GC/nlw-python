@@ -107,12 +107,12 @@ Our business rules are located in this place. <br>
 ----
 **Cerberus e Validator_raw.py** <br>
 
-Para não criarmos cada validação de entrada manualmente, podemos utilizar o 'Validator' da biblioteca do Cerberus. <br>
+To avoid creating each input validation manually, we can use the 'Validator' from the Cerberus library. <br>
 
 ----
 **Mock_value** <br>
 
-Para evitar a criação desnecessária de barcodes a cada teste, foi instanciada uma cópia fantasma ou espelho, que atenderá as demandas do teste unitário sem necessariamente criar algo, retornando o valor desejado através do 'mock_value', no trecho de código abaixo. <br>
+In order to avoid the redundant generation of barcodes for every test, a duplicate or mirrored copy was created, which fulfills the requirements of the unit test without actually creating anything. This copy returns the desired value through 'mock_value', as shown in the code snippet below. <br>
 ```py
 from  unittest.mock import patch
 from src.drivers.barcode_handler import BarcodeHandler
